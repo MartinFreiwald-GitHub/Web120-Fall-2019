@@ -46,10 +46,10 @@
  */
 
 //place your site keys here (keys for web-students.net posted here)
-$siteKey = "6LeDaSoUAAAAACnEiqA3QAkiRU-Q_wtk0vuBa_OX";
-$secretKey = "6LeDaSoUAAAAACJ69mIHYOxL4atri9oPrjkIVMFv";
+$siteKey = "6Ldq2a0UAAAAACJR9HO8PdqtLOzdlkxhrpHHjzwQ";
+$secretKey = "6Ldq2a0UAAAAAL8WIP0_6CXih1K5yzUV8jiNAyT6";
 date_default_timezone_set('America/Los_Angeles'); #sets default date/timezone for this website
-$server = 'hostgator.com';
+$server = 'dreamhost.com';
 //end config area ----------------------------------------
 
 spl_autoload_register('MyAutoLoader::NamespaceLoader');#will check subfolders as namespaces
