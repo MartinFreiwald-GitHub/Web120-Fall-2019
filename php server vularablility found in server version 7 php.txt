@@ -1,0 +1,7 @@
+The PHP development team has fixed a bug that could allow remote code execution in some setups of the programming language. Get the details:
+
+The PHP development team has fixed a bug that could allow remote code execution in some setups of the programming language, possibly allowing attackers to take over any site running the code remotely.
+
+PHP is a common programming language used to run dynamic websites. It operates everything from online forums to ecommerce systems. The bug, found in version 7 of PHP, only affects instances running the PHP FastCGI Process Manager (PHP-FPM), which is an alternative implementation of a standard PHP module called FastCGI. It lets an interpreter outside the web server execute scripts. The process manager version includes some extra features to support high-volume websites.
+
+For the bug to work, the website must also be running the Nginx web server, which runs on around one in every three websites, according to W3techs.
