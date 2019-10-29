@@ -9,15 +9,14 @@
  </head>
  <body>
      <header>
-     <h1>(Martin Freiwald): WEB110 Portal Website</h1>
+     <h1>Martin Freiwald: WEB120 Porthole</h1>
      <nav class="topnav" id="myTopnav">
-       <a href="index.html" class="active">Welcome</a>
-       <a href="elements.html">HTML Elements</a>
+     <a href="index.php" class="selected">Welcome</a>
        <a href="big/index.html">BIG</a>
-       <a href="http://w3schools.com" target="_blank">W3 Schools</a>
-       <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
-       <a href="fp/index.html">Final Project</a>
-       <a href="contact.php">Contact (Martin Freiwald)</a>
+       <a href="aia.php">AIA</a>
+       <a href="flowchart.php">Flowchart</a>
+       <a href="fp/index.php">Final Project</a>
+       <a href="contact.php">Martin Freiwald</a>
        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
     </nav>
      </header>

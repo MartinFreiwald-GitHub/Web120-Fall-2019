@@ -4,16 +4,53 @@
 
 html {
     background-color:#ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .1.0625em;
+    line-height: 1.5em;
+}
+/* Style the links inside the navigation bar */
+.topnav  {
+    float: left;
+    display: block;
+    background-color: #333; /* orginal .topnav has background-color and overflow: hidden; */
+    overflow: hidden;
+    text-align: center;
+    padding: .875em 1em;
+    text-decoration: none;
+    font-size: 1.0625em;
 }
 
+/* Change the color of links on hover */
+.topnav:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
 main.wrapper {
     background-color:#fff;
     overflow:auto;
 }
 
-h1>a {
+h1.a {
     text-decoration: none;
-    color:#000;
+    margin: auto;
+    background-color:rgb(27, 111, 126);
+    line-height: 2em;
+}
+a:hover {
+    color:white;
+    background-color:#ff0;
+    text-decoration: none;
 }
 
 .logo {
@@ -126,7 +163,7 @@ footer {
     	}  
 
 }
-@charset "utf-8";
+
 /* CSS Document */
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -146,10 +183,10 @@ ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: .875em 1em;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 1.0625em;
 }
 
 /* Change background color of links on hover */
@@ -191,15 +228,18 @@ ul.topnav.responsive li a {
 }
 /* start reCAPTCHA styles */
 
-form>div {
-    margin:1em;
+div {
+    margin:3em;
+    padding: 3em 1em;
 }
-
+div.body {
+    margin-right: 3em;
+}
 /* writes to small text above reCAPTCHA upon failure */
 
 .dateFeedback{
     font-style:italic;
-    font-size:70%;
+    font-size:110%;
     font-weight:bold;
     color:#f00;
 }
