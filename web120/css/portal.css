@@ -1,80 +1,32 @@
+/*(portal.css) The following are helpful starter cascading stylesheet rules for your portal website. Save this into your web120 > css folder and make changes that demonstrate your color, font and layout preferences.
+
 /* My WEB120 Portal Website Styles */
 
 /* My WEB120 Portal Website Styles */
 
 html {
     background-color:#ccc;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.0625em;
-    line-height: 1.5em;
 }
-/* Style the links inside the navigation bar */
-.topnav  {
-    float: left;
-    display: block;
-    background-color: #333; /* orginal .topnav has background-color and overflow: hidden; */
-    overflow: hidden;
-    text-align: center;
-    padding: .875em 1em;
+
+main.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+h1>a {
     text-decoration: none;
-    font-size: 1.0625em;
+    font-size: 2.125em;
+    color:red;
 }
-
-/* Change the color of links on hover */
-.topnav:hover {
-    background-color: #ddd;
-    color: black;
+h2, h3 {
+     font-size: 2.50em;
 }
-
-/* Add an active class to highlight the current page */
-.topnav .active {
-    background-color: #4CAF50;
-    color: white;
+ h4 {
+     height:.25em; 
+     font-size: 2.25em;
+} 
+p {
+    font-size: 2em;    
 }
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-body  {
-    margin: 2 em;
-    padding:1 em;
-    font-size: .97 em;
-    line-height: 1.25 em;
-
-/* Extra for videos added using mp4, which works the best for web pages. */    
-}
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-/* End of adding the video to the web page. */
-
-h1.a {
-    text-decoration: none;
-    margin: auto;
-    background-color:rgb(27, 111, 126);
-    line-height: 2em;
-}
-a:hover {
-    color:white;
-    background-color:#ff0;
-    text-decoration: none;
-}
-
 .logo {
     color:red;
     margin-left:1%;
@@ -110,22 +62,21 @@ footer {
 @media all and (min-width:1400px) {
 	
    main.wrapper {
-		width:80%;
+		width:98%;
 		margin:auto;
 	}
 
     section {
-		width:65%;
-		float:left;
+      width:70%;
+		  float:left;
 	}
 	
      aside {	
-		width:34%;
-		float:right;
+		width:29%;
+    float:right;
 	}
 			
     img.desktop {
-      		float:left;
        		width:50%;
             display:inline-block;
     }
@@ -186,6 +137,10 @@ footer {
 
 }
 
+
+/*(nav.css) The following styles for your navigation for your WEB120 portal website. They come from the W3Schools execise here, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp  Save this code to your web120 > css folder and make changes to demonstrate your color and font preferences, if desired.
+
+@charset "utf-8";
 /* CSS Document */
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -205,10 +160,11 @@ ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: .875em 1em;
+    margin: 1px 30px;
+    padding: 14px 40px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 1.0625em;
+    font-size: 14px;
 }
 
 /* Change background color of links on hover */
@@ -230,73 +186,71 @@ ul.topnav li.icon {display: none;}
 
 @media screen and (max-width:680px) {
  
-ul.topnav.responsive {position: relative;}
-ul.topnav.responsive li.icon {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
-}
+  }
 
-ul.topnav.responsive li {
+  ul.topnav.responsive li {
     float: none;
     display: inline;
-}
+  }
 
-ul.topnav.responsive li a {
+  ul.topnav.responsive li a {
     display: block;
     text-align: left;
-}
+  }
 
 }
+
+
+
+/*(form.css) The following are helpful starter styles for your contactme.php page where your form reside for your WEB120 portal website. Save it in your web120 > css folder and then make changes to it as desired!
+
 /* start reCAPTCHA styles */
 
-div {
-    margin:3em;
-    padding: 3em 1em;
-}
-div.body {
-    margin-right: 3em;
-}
-/* writes to small text above reCAPTCHA upon failure */
+       form>div {
+            margin:1em;
+        }
+		
+       /* writes to small text above reCAPTCHA upon failure */
 
-.dateFeedback{
-    font-style:italic;
-    font-size:110%;
-    font-weight:bold;
-    color:#f00;
-}
+        .dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
 
-input:required {
-    border: 1px solid red;
-}
+        input:required {
+              border: 1px solid red;
+        }
 
-input:optional, textarea:optional {
-    background-color:#f1f1f1;
-    border:1px solid #ccc;
-}
+         input:optional, textarea:optional {
+             background-color:#f1f1f1;
+             border:1px solid #ccc;
+        }
 
-input[type="submit"], input[type="button"] {
-    background-color: #fff;
-    border-radius: 4px;
-    border: solid 1px #ccc;
-    padding: 0.3em 0.5em;
-}
+        input[type="submit"], input[type="button"] {
+          background-color: #fff;
+          border-radius: 4px;
+          border: solid 1px #ccc;
+          padding: 0.3em 0.5em;
+        }
 
-fieldset {
-    border: 1px solid #ccc;
-    max-width: 350px;
-}
+        fieldset {
+          border: 1px solid #ccc;
+          max-width: 350px;
+        }
 
-legend {
-    margin-left: 0.5em;
-    padding: 0.2em 0.5em;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-}
-
-/* end reCAPTCHA styles */
-
-
-
-
+        legend {
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+        
+        /* end reCAPTCHA styles */
 
