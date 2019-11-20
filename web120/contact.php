@@ -4,27 +4,29 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/nav.css">
  </head>
  <body>
      <header>
-     <h1>Martin Freiwald: WEB120 Porthole</h1>
-     <nav class="topnav" id="myTopnav">
-     <a href="index.php" class="selected">Welcome</a>
-       <a href="big/index.html">BIG</a>
-       <a href="aia.php">AIA</a>
-       <a href="flowchart.php">Flowchart</a>
-       <a href="fp/index.php">Final Project</a>
-       <a href="contact.php">Martin Freiwald</a>
-       <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
-    </nav>
+      <h1>Martin Freiwald: WEB120 Portal</h1>
+          <nav> 
+              <ul class="topnav" id="myTopnav">
+                <li><a href="index.php">Welcome</a></li>
+                <li><a href="big/index.php">Big</a></li>
+                <li><a href="aia.php">AIA</a></li>
+                <li><a href="flowchart.php">Flowchart/Layout</a></li>
+                <li><a href="fp/index.php">Final Project</a></li>
+                <li><a href="contact.php">Contact - Martin Freiwald</a></li>
+                <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
+              </ul>
+          </nav>
      </header>
     
-
-   <main class="wrapper">
+<main class="wrapper">
      
-   <h1>Contact Me</h1>
+  <h1>Contact Me</h1>
+
 
 <?php
     /*

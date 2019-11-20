@@ -1,8 +1,3 @@
-/*(portal.css) The following are helpful starter cascading stylesheet rules for your portal website. Save this into your web120 > css folder and make changes that demonstrate your color, font and layout preferences.
-
-/* My WEB120 Portal Website Styles */
-
-/* My WEB120 Portal Website Styles */
 
 html {
     background-color:#ccc;
@@ -36,7 +31,19 @@ p {
     text-shadow:1px 1px #ccc;
     font-size:1.25em;
 }
-
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container.ifram {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
 /* Embed Responsively Rules! */
 div.embed-container {
     position: relative;
@@ -163,12 +170,12 @@ ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    margin: .125em .89em;
-    padding: .125em .89em;
+    margin: 1px 30px;
+    padding: 14px 32px;
     text-decoration: none;
     transition: 0.3s;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
+    font-size: 14px;
 }
 
 /* Change background color of links on hover */
@@ -257,4 +264,8 @@ ul.topnav li.icon {display: none;}
         }
         
         /* end reCAPTCHA styles */
+
+
+
+
 
